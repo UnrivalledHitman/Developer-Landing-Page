@@ -1,2 +1,3 @@
 # Developer-Landing-Page
-Practicing HTML+CSS
+Deployed Link: https://unrivalledhitman.github.io/Developer-Landing-Page/
+Fully responsive on all screen size
