@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bg_image_with_text {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./images/developer.png);
+  min-height: 80vh;
+  background-position: center;
+  background-size: cover; /* Changed from 'fi' to 'cover' */
+  background-repeat: no-repeat;
+  color: white;
+  align-items: center;
+  font-size: 30px;
+}
+
+#big_text1,
+#big_text2 {
+  font-size: 54px;
+}
+
+.intro_text {
+  display: flex;
+  min-height: 20vh;
+  background-color: rgba(22, 22, 25, 1);
+  color: rgba(255, 255, 255, 1);
+  align-items: center;
+  font-size: 30px;
+  justify-content: center;
+}
+
+#intro_text {
+  font-size: 50px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; /* Added for better responsiveness */
+}
+
+.main img {
+  border-radius: 15px;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  margin: 40px 20px;
+  box-shadow: 5px 5px 5px rgb(204, 203, 203);
+  border-radius: 15px;
+  padding: 10px 5px;
+  line-height: 1.7rem;
+}
+
+.frame h2 {
+  margin-top: 10px;
+}
+
+.footer {
+  display: flex;
+}
+
+.frame1 {
+  background-color: rgba(81, 86, 3, 1);
+}
+
+.frame2 {
+  background-color: rgba(114, 35, 0, 1);
+}
+
+.frame1,
+.frame2 {
+  padding: 25px;
+  text-align: justify;
+  color: white;
+}
+
+footer {
+  display: flex;
+  background-color: black;
+  color: white;
+  height: 7vh;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 1200px) {
+  #big_text1,
+  #big_text2 {
+    font-size: 48px;
+  }
+
+  #intro_text {
+    font-size: 40px;
+  }
+
+  .frame {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 992px) {
+  #big_text1,
+  #big_text2 {
+    font-size: 42px;
+  }
+
+  #intro_text {
+    font-size: 35px;
+  }
+
+  .frame {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .bg_image_with_text {
+    font-size: 24px;
+  }
+
+  #big_text1,
+  #big_text2 {
+    font-size: 36px;
+  }
+
+  #intro_text {
+    font-size: 30px;
+  }
+
+  .frame {
+    width: 80vw;
+    margin: 20px 10px;
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .bg_image_with_text {
+    font-size: 20px;
+  }
+
+  #big_text1,
+  #big_text2 {
+    font-size: 28px;
+  }
+
+  #intro_text {
+    font-size: 25px;
+  }
+
+  .frame {
+    width: 90vw;
+    margin: 15px 5px;
+  }
+
+  footer {
+    font-size: medium;
+  }
+}
